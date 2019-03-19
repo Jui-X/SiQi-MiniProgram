@@ -1,0 +1,6 @@
+
+<view>
+  <view class="userinfo">
+    <button class='loginBtn' type='primary' open-type="getUserInfo" bindgetuserinfo="getUserInfo">获取用户信息</button>
+  </view>
+</view>

@@ -1,12 +1,40 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/userInfo/userInfo",
+    "pages/login/login",
+    "pages/wxLogin/login"
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarBackgroundColor": "#66CCFF",
+    "navigationBarTitleText": "ContestGo",
     "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "pages/resource/images/icon_index.png",
+        "selectedIconPath": "pages/resource/images/icon_index.png",
+        "text": "主页"
+      },
+      {
+        "pagePath": "pages/login/login",
+        "iconPath": "pages/resource/images/icon_community.png",
+        "selectedIconPath": "pages/resource/images/icon_community.png",
+        "text": "社区"
+      },
+      {
+        "pagePath": "pages/userInfo/userInfo",
+        "iconPath": "pages/resource/images/icon_userInfo.png",
+        "selectedIconPath": "pages/resource/images/icon_userInfo.png",
+        "text": "个人中心"
+      }
+    ]
   }
 }

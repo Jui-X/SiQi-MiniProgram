@@ -4,7 +4,7 @@
 		"ignore": []
 	},
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
@@ -12,9 +12,9 @@
 		"autoAudits": false
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.5.0",
-	"appid": "wx9ea5128f9cf03687",
-	"projectname": "SiQi-MiniProgram",
+	"libVersion": "2.6.0",
+	"appid": "wxcd637a1e509ee41c",
+	"projectname": "ContestGo-Miniprogram",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
