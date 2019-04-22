@@ -19,7 +19,7 @@
 }
 
 .swipe-1:before {
-  content: '竞赛分类';
+  content: '课程分类';
   position: absolute;
   top: 50%;
   left: 50%;
@@ -35,7 +35,7 @@
 }
 
 .swipe-2:before {
-  content: '科研竞赛';
+  content: '养生保健';
   position: absolute;
   top: 50%;
   left: 50%;
@@ -51,7 +51,23 @@
 }
 
 .swipe-3:before {
-  content: '体育竞赛';
+  content: '书法绘画';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.swipe-4 {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  color: #353535;
+  font-size: 36rpx;
+}
+
+.swipe-4:before {
+  content: '居家烹饪';
   position: absolute;
   top: 50%;
   left: 50%;

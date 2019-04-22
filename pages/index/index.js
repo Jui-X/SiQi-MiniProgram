@@ -6,26 +6,15 @@ Page({
   data: {
     indicatorDots: true,
     vertical: false,
-    autoplay: true,
+    autoplay: false,
     interval: 3000,
     duration: 1000,
     currentTab: 0,
 
   },
-  changeTab(e) {
-    const that = this;
-    that.setData({
-      currentTab: e.detail.current
-    }) 
-  },
-  checkCurrentTab(e) {
-    const that = this;
-    if (that.data.checkCurrentTab == e.target.dataset.current) {
-      return false;
-    } else {
-      that.setData({
-        currentTab: e.target.dataset.current
-      })
-    }
-  }
+  search(e) {
+    wx.navigateTo({
+      url: '../search/search',
+    })
+  } 
 })

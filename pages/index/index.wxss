@@ -4,28 +4,6 @@
   background-color: #66CCFF;
   padding: 0 20px 10px 20px;
 }
-.tab{
-  float: left;
-  width: 50%;
-  text-align: center;
-  padding: 10rpx 0;
-  font-size: 13px;
-}
-.topTabSwiper{
-  border-top: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
-}
-.topTabSwiper:after{
-  content: "";
-  clear: both;
-  display: block;
-}
-.tabBorder{
-  border-bottom: 1px solid #66CCFF;
-}
-.swiper{
-  width: 100%;
-}
 .swiper-con{
   text-align: center;
   height: 100%;
@@ -41,7 +19,7 @@
   flex-direction: column;
   height: 200px;
   width: 200px;
-  background-color: #66CCFF;
+  background-color: #fff;
   margin: 25px 0 0 20px;
   border-radius: 25px;
   box-shadow: 0 5px 5px 0 #D0D0D0;

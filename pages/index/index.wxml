@@ -1,62 +1,48 @@
 <!--index.wxml-->
 <view>
   <view class="search-bar">
-    <view class="weui-search-bar__form">
+    <view class="weui-search-bar__form" bindtap="search">
       <view class="weui-search-bar__box">
         <input type="text" class="weui-search-bar__input" placeholder="搜索热门分享" value="{{wxSearchData.value}}" bindinput="wxSearchInput" bindconfirm="wxSearchConfirm" />
         <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
-        <view class="weui-icon-clear" wx:if="{{wxSearchData.value.length > 0}}" bindtap="wxSearchClear">
-          <icon type="clear" size="14"></icon>
-        </view>
       </view>
-    </view>
-    <view class="weui-search-bar__cancel-btn" bindtap="wxSearchConfirm">
-      <text wx:if="{{wxSearchData.value.length>0}}" data-key='search'>搜索</text>
     </view>
   </view>
 
-  <view class="topTabSwiper">
-    <view class='tab {{currentTab == 0 ? "tabBorder" : ""}}' data-current="0" bindtap="checkCurrentTab">科研类</view>
-    <view class='tab {{currentTab == 1 ? "tabBorder" : ""}}' data-current="1" bindtap="checkCurrentTab">体育类</view>
-  </view>
-
-  <swiper current="{{currentTab}}" class="swiper" style="height: 1000px;" duration="500" bindChange="changeTab">
-    <swiper-item>
-      <view class="swiper-con">
-        <view class='swiper-section'>
-          <view class="page-section page-section-spacing swiper">
-            <swiper autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" style="height: 250px;" next-margin="25px;">
-              <swiper-item>
-                <view class="swiper-item">
-
-                </view>
-              </swiper-item>
-              <swiper-item>
-                <view class="swiper-item">
-                  
-                </view>
-              </swiper-item>
-              <swiper-item>
-                <view class="swiper-item">
-                  
-                </view>
-              </swiper-item>
-            </swiper>
-          </view>
+  <view class="swiper-con">
+      <view class='swiper-section'>
+        <view class="page-section page-section-spacing">
+          <swiper autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" style="height: 250px;" next-margin="25px;">
+            <swiper-item>
+              <view class="swiper-item">
+                <image src="../resource/images/pic_1.png" style="width:200px; height:200px; border-radius:25px 25px 0 0;" mode="scaleToFill"></image>
+                <!-- <image src="../resource/images/title.png" style="width:200px; height:75px;border-radius:25px 25px 0 0;" mode="scaleToFill"></image> -->
+              </view>
+            </swiper-item>
+            <swiper-item>
+              <view class="swiper-item">
+                
+              </view>
+            </swiper-item>
+            <swiper-item>
+              <view class="swiper-item">
+                
+              </view>
+            </swiper-item>
+          </swiper>
         </view>
+      </view>
 
-        <view>
-          <view class="page-section-spacing">
-            <view class="flex-wrp" style="flex-direction:row;">
-              <view class="flex-item swipe-1"></view>
-              <view class="flex-item swipe-2"></view>
-              <view class="flex-item swipe-3"></view>
-            </view>
+      <view>
+        <view class="page-section-spacing">
+          <view class="flex-wrp" style="flex-direction:row;">
+            <view class="flex-item swipe-1"></view>
+            <view class="flex-item swipe-2"></view>
+            <view class="flex-item swipe-3"></view>
+            <view class="flex-item swipe-4"></view>
           </view>
         </view>
       </view>
-    </swiper-item>
-    <swiper-item><view class="swiper-con">体育</view></swiper-item>
-  </swiper>
+    </view>
 
 </view>

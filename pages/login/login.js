@@ -38,6 +38,7 @@ Page({
     }
   },
   getUserInfo: function(e) {
+    var serverUrl = app.serverUrl
     console.log(e.detail.userInfo)
     console.log(e.detail.rawData)
 
@@ -48,7 +49,7 @@ Page({
         var code = res.code;
         // 调用后端，获取微信的session_key, secret
         wx.request({
-          url: 'http://127.0.0.1:8081/wxLogin',
+          url: serverUrl + '/wxLogin',
           data: {
             code: code
           },

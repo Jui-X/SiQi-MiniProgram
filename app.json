@@ -1,15 +1,16 @@
 {
-  "pages":[
+  "pages": [
+    "pages/post/post",
     "pages/index/index",
-    "pages/userInfo/userInfo",
-    "pages/login/login",
-    "pages/wxLogin/login"
+    "pages/user-info/user-info",
+    "pages/search/search",
+    "pages/login/login"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#66CCFF",
-    "navigationBarTitleText": "ContestGo",
-    "navigationBarTextStyle":"black"
+    "navigationBarTitleText": "银领未来",
+    "navigationBarTextStyle": "black"
   },
   "tabBar": {
     "color": "#7A7E83",
@@ -20,21 +21,22 @@
       {
         "pagePath": "pages/index/index",
         "iconPath": "pages/resource/images/icon_index.png",
-        "selectedIconPath": "pages/resource/images/icon_index.png",
+        "selectedIconPath": "pages/resource/images/icon_index_selected.png",
         "text": "主页"
       },
       {
         "pagePath": "pages/login/login",
         "iconPath": "pages/resource/images/icon_community.png",
-        "selectedIconPath": "pages/resource/images/icon_community.png",
+        "selectedIconPath": "pages/resource/images/icon_community_selected.png",
         "text": "社区"
       },
       {
-        "pagePath": "pages/userInfo/userInfo",
+        "pagePath": "pages/user-info/user-info",
         "iconPath": "pages/resource/images/icon_userInfo.png",
-        "selectedIconPath": "pages/resource/images/icon_userInfo.png",
+        "selectedIconPath": "pages/resource/images/icon_userInfo_selected.png",
         "text": "个人中心"
       }
     ]
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }
