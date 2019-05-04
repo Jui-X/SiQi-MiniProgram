@@ -1,61 +1,60 @@
-/**userInfo.wxss**/
 @import "../common/lib/weui.wxss";
-@import "../common/font.wxss";
 
-page{
-  font-size: 28rpx;
-  background-color: whitesmoke;
+.update-info {
+  background-color: #66CCFF;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 15rpx;
 }
-.header {
+.update-btn {
+  background-color: #66CCFF;
+  display: flex;
+  flex-direction: row;
+  font-size: 24rpx;
+  margin: 0;
+  padding-top: 10rpx;
+  border: #EEE solid 2rpx;
+}
+.container {
+  background-color: whitesmoke;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px;
-  background-color: #FFF;
-}
-.head-portrait{
-  border-radius: 100rpx;
-  width: 160rpx; 
-  height: 160rpx;
-}
-.container-row {
-  display: flex;
-  flex-direction: row;
-  margin: 10rpx 0;
+  padding: 20rpx;
 }
 .container-col {
   display: flex;
   flex-direction: column;
-  margin: 15rpx;
+  margin-bottom: 10rpx;
+  margin-top: 10rpx;
+}
+.head{
+  margin-top: 25px;
+  margin-left: 20px;
+}
+.head-portrait{
+  border-radius: 50px;
+  width: 160rpx; 
+  height: 160rpx;
 }
 .nickname {
   text-align: center;
+  margin-top: 5px;
   font-weight: bold;
-  font-size: 36rpx;
-  padding-top: 10rpx;
+  font-size: 18px;
 }
-.userInfo-btn {
-  width: 400rpx;
-  background-color: #FFF;
-  border-radius: 50rpx;
-  border: #EEEEEE solid 1rpx;
-}
-.page-container{
+.user-info {
   display: flex;
   flex-direction: column;
-  margin-top: 35rpx;
-  background-color: #FFF;
+  background-color: whitesmoke;
 }
-.page-item{
+.user-item {
   display: flex;
   flex-direction: row;
-  width: 100%;
-  padding: 25rpx 35rpx;
-  border-bottom: #EEE solid 1rpx;
-}
-.setting {
-  display: flex;
-  flex-direction: column;
-  margin-top: 35rpx;
-  background-color: #FFF;
+  background-color: #fff;
+  color: #888888;
+  font-size: 36rpx;
+  padding: 15rpx 25rpx;
+  border: 2rpx solid #ccc;
 }

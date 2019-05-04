@@ -1,4 +1,4 @@
-/**app.wxss**/
+/* *app.wxss*
 
 .container {
   height: 100%;
@@ -74,4 +74,4 @@
   transform: translate(-50%, -50%);
 }
 
-
+ */

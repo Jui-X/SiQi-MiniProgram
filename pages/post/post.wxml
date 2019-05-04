@@ -4,9 +4,13 @@
     <view class="weui-cell">
       <view class="weui-cell__bd">
         <view class="weui-uploader">
-          <view class="weui-uploader__hd">
-            <view class="weui-uploader__title">图片上传</view>
-            <view class="weui-uploader__info">{{imgList.length}}/{{count}}</view>
+        <view class="weui-uploader__bd title-input">
+            <input style="border-bottom: solid #ccc 2rpx;" placeholder="这里写下您的标题" placeholder-class="annotation-font">
+            </input>
+          </view>
+          <view class="weui-uploader__bd">
+            <textarea placeholder="这里写下您想分享的内容..." placeholder-class="annotation-font" >
+            </textarea>
           </view>
           <view class="weui-uploader__bd">
             <view class="weui-uploader__files">
@@ -20,9 +24,23 @@
               <view class="weui-uploader__input" bindtap="chooseImage"></view>
             </view>
           </view> 
+          <view class="weui-uploader__hd">
+            <view class="weui-uploader__title annotation-font">这里添加照片或视频</view>
+            <view class="weui-uploader__info">{{imgList.length}}/{{count}}</view>
+          </view>
           <view class="weui-uploader__bd">
             <view>
-              <button class="weui-btn" type="primary" bindtap="uploadImg">上传</button>
+              <button class="upload-btn" bindtap="uploadImg">
+                <view class="btn-font">确认发布分享</view>  
+              </button>
+            </view>
+          </view>
+          <view class="weui-uploader__bd float-btn">
+            <view>
+              <button class="floating-btn">
+                <image src="../resource/images/icon_cancel.png" style="height:50rpx; width:50rpx;"></image>
+                <view class="btn-font">取消</view>
+              </button>
             </view>
           </view>
         </view>

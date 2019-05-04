@@ -1,1 +1,26 @@
 @import "../common/lib/weui.wxss";
+@import "../common/font.wxss";
+
+.title-input {
+  margin: 20rpx 0;
+}
+.upload-btn {
+  height: 75rpx;
+  background-color: #66CCFF;
+  border-radius: 50rpx;
+}
+.float-btn {
+  display: flex;
+  justify-content: flex-end;
+  margin: 50rpx 0;
+}
+.floating-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 125rpx;
+  width: 125rpx;
+  border-radius: 100rpx;
+  background-color: #87B1F5;
+  padding: 0;
+}

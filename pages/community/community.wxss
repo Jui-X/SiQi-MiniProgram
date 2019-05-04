@@ -1,0 +1,102 @@
+@import "../common/lib/weui.wxss";
+@import "../common/font.wxss";
+
+.community-page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.tab {
+  float: left;
+  width: 50%;
+  text-align: center;
+  padding: 10rpx 0;
+  font-size: 24rpx;
+  background-color:  #66CCFF;
+}
+.topTabSwiper:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.tabBorder {
+  background-color:  #fff;
+  text-align: center;
+  color: #4169E1;
+  border-radius: 20rpx;
+}
+.swiper {
+  width: 100%;
+}
+.swiper-section {
+  text-align: center;
+  height: 100%;
+  /* background-image: url(); */
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+}
+.team-section {
+  display: flex;
+  flex: row;
+  justify-content: space-around;
+  padding: 30rpx 20rpx;
+}
+.moment-item {
+  display: flex;
+  flex-direction: column;
+  height: 400rpx;
+  width: 325rpx;
+  background-color: #fff;
+  border-radius: 25rpx;
+  box-shadow: 0 5px 5px 0 #D0D0D0;
+}
+.team-title {
+  padding-top: 20rpx;
+  background-color: #66CCFF;
+  color: #4169E1;
+  font-size: 30rpx;
+  text-align: center;
+  padding: 10rpx;
+  border: 5rpx solid #fff;
+  border-radius: 25px 25px 0 0;
+}
+.team-info {
+  margin-top: 10rpx;
+  color: #888888;
+  font-size: 24rpx;
+  text-align: center;
+}
+.share-page {
+  display: flex;
+  flex-direction: column;
+}
+.share-section {
+  display: flex;
+  flex-direction: column;
+  margin: 25rpx;
+  background-color: #fff;
+  border-radius: 25rpx;
+  box-shadow: 0 5px 5px 0 #D0D0D0;
+}
+.share-item {
+  display: flex;
+  flex-direction: row;
+  height: 120rpx;
+}
+.share-header {
+  display: flex;
+  flex-direction: column;
+  padding-top: 25rpx;
+  padding-left: 25rpx;
+}
+.share-content {
+  padding-top: 20rpx;
+  padding-left: 20rpx;
+}
+.comment {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 10rpx;
+}

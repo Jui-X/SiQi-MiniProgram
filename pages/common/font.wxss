@@ -21,7 +21,7 @@
 }
 .annotation-font {
   color: #AAAAAA; 
-  font-size: 30rpx; 
+  font-size: 32rpx; 
 }
 .highlight-font {
   color: #333333; 

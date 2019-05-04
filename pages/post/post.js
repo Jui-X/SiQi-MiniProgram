@@ -1,7 +1,7 @@
 
 Page({
   data: {
-    count: 5,
+    count: 9,
     imgList: [],
     result: []
   },

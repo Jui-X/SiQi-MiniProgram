@@ -10,7 +10,7 @@ Page({
   },
   //事件处理函数
   onLoad: function () {
-    if (app.globalData.userInfo) {
+    if (app.getGlobalUserInfo()) {
       this.setData({
         userInfo: app.globalData.userInfo,
         hasUserInfo: true
@@ -37,6 +37,7 @@ Page({
       })
     }
   },
+  
   getUserInfo: function(e) {
     var serverUrl = app.serverUrl
     console.log(e.detail.userInfo)

@@ -1,9 +1,11 @@
 {
   "pages": [
-    "pages/post/post",
+    "pages/community/community",
     "pages/index/index",
-    "pages/user-info/user-info",
     "pages/search/search",
+    "pages/user-center/user-center",
+    "pages/user-info/user-info",
+    "pages/post/post",
     "pages/login/login"
   ],
   "window": {
@@ -14,7 +16,7 @@
   },
   "tabBar": {
     "color": "#7A7E83",
-    "selectedColor": "#3cc51f",
+    "selectedColor": "#66CCFF",
     "borderStyle": "black",
     "backgroundColor": "#ffffff",
     "list": [
@@ -25,13 +27,13 @@
         "text": "主页"
       },
       {
-        "pagePath": "pages/login/login",
+        "pagePath": "pages/community/community",
         "iconPath": "pages/resource/images/icon_community.png",
         "selectedIconPath": "pages/resource/images/icon_community_selected.png",
         "text": "社区"
       },
       {
-        "pagePath": "pages/user-info/user-info",
+        "pagePath": "pages/user-center/user-center",
         "iconPath": "pages/resource/images/icon_userInfo.png",
         "selectedIconPath": "pages/resource/images/icon_userInfo_selected.png",
         "text": "个人中心"
