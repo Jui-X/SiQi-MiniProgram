@@ -51,5 +51,11 @@ Page({
         console.log(this.data.result)
       }
     })
+  },
+
+  cancel() {
+    wx.navigateBack({
+      
+    })
   }
 })

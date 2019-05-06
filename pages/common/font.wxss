@@ -5,8 +5,9 @@
   font-weight: bolder;
 }
 .title-font {
-  color: #888888; 
+  color: #333; 
   font-size: 32rpx; 
+  padding: 10rpx;
   text-align: center; 
 }
 .text-font {
@@ -21,7 +22,8 @@
 }
 .annotation-font {
   color: #AAAAAA; 
-  font-size: 32rpx; 
+  font-size: 30rpx;
+  padding: 0 10rpx; 
 }
 .highlight-font {
   color: #333333; 
@@ -30,5 +32,5 @@
 }
 .btn-font {
   color: #fff;
-  font-size: 32rpx;
+  font-size: 30rpx;
 }

@@ -1,11 +1,13 @@
 {
   "pages": [
-    "pages/community/community",
     "pages/index/index",
-    "pages/search/search",
+    "pages/community/community",
+    "pages/tutorial/tutorial",
+    "pages/video-course/video-course",
+    "pages/post/post",
     "pages/user-center/user-center",
     "pages/user-info/user-info",
-    "pages/post/post",
+    "pages/search/search",
     "pages/login/login"
   ],
   "window": {

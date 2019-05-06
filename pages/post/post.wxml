@@ -35,10 +35,10 @@
               </button>
             </view>
           </view>
-          <view class="weui-uploader__bd float-btn">
+          <view class="float-btn">
             <view>
-              <button class="floating-btn">
-                <image src="../resource/images/icon_cancel.png" style="height:50rpx; width:50rpx;"></image>
+              <button class="floating-btn" bindtap="cancel">
+                <image src="../resource/images/icon_cancel.png" style="height:50rpx; width:50rpx; padding-top: 10rpx;"></image>
                 <view class="btn-font">取消</view>
               </button>
             </view>

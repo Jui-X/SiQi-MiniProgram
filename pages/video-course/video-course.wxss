@@ -1,0 +1,63 @@
+@import "../common/lib/weui.wxss";
+@import "../common/font.wxss";
+
+.video-course {
+  display: flex;
+  flex-direction: column;
+}
+.course-video {
+  padding: 0;
+}
+.course-section {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.tab {
+  float: left;
+  width: 50%;
+  text-align: center;
+  padding: 10rpx 0;
+  font-size: 36rpx;
+}
+.topTabSwiper {
+}
+.topTabSwiper:after {
+  content: "";
+  clear: both;
+  display: block;
+  margin: 0 50rpx;
+  border-bottom: solid #CCC 1rpx;
+}
+.tabBorder {
+  background-color:  #fff;
+  text-align: center;
+  color: #F9C75E;
+  border-radius: 20rpx;
+}
+.swiper {
+  width: 100%;
+}
+.swiper-section {
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+}
+.course-title {
+  padding-top: 25rpx;
+}
+.course-content {
+  padding: 15rpx 75rpx;
+}
+.course-tail {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10rpx 40rpx;
+}
+.practice-btn {
+  height: 60rpx;
+  background-color: #66CCFF;
+  border-radius: 50rpx;
+}

@@ -36,7 +36,7 @@
   background-size: 100% 100%;
   -moz-background-size: 100% 100%;
 }
-.team-section {
+.moment-section {
   display: flex;
   flex: row;
   justify-content: space-around;
@@ -45,58 +45,42 @@
 .moment-item {
   display: flex;
   flex-direction: column;
-  height: 400rpx;
+  height: 450rpx;
   width: 325rpx;
   background-color: #fff;
   border-radius: 25rpx;
   box-shadow: 0 5px 5px 0 #D0D0D0;
 }
-.team-title {
-  padding-top: 20rpx;
-  background-color: #66CCFF;
-  color: #4169E1;
-  font-size: 30rpx;
-  text-align: center;
-  padding: 10rpx;
-  border: 5rpx solid #fff;
-  border-radius: 25px 25px 0 0;
-}
-.team-info {
-  margin-top: 10rpx;
-  color: #888888;
-  font-size: 24rpx;
-  text-align: center;
-}
-.share-page {
-  display: flex;
-  flex-direction: column;
-}
-.share-section {
-  display: flex;
-  flex-direction: column;
-  margin: 25rpx;
-  background-color: #fff;
-  border-radius: 25rpx;
-  box-shadow: 0 5px 5px 0 #D0D0D0;
-}
-.share-item {
+.user-info {
   display: flex;
   flex-direction: row;
-  height: 120rpx;
+  padding: 0 10rpx 10rpx 10rpx;
 }
-.share-header {
-  display: flex;
-  flex-direction: column;
-  padding-top: 25rpx;
-  padding-left: 25rpx;
-}
-.share-content {
-  padding-top: 20rpx;
-  padding-left: 20rpx;
+.head-portrait{
+  border-radius: 50rpx;
+  width: 50rpx; 
+  height: 50rpx;
 }
 .comment {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   padding: 10rpx;
+}
+.float-btn {
+  position: absolute;
+  right: 50rpx;
+  bottom: 50rpx;
+  display: flex;
+  justify-content: flex-end;
+}
+.floating-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 125rpx;
+  width: 125rpx;
+  border-radius: 100rpx;
+  background-color: #498DF9;
+  padding: 0;
 }

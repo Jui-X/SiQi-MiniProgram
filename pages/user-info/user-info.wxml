@@ -1,7 +1,7 @@
 <view>
   <view class="update-info">
     <button class="update-btn">
-      <image src="../resource/images/icon_update.png" style="height:50rpx; width:50rpx;">
+      <image src="../resource/images/icon_post.png" style="height:50rpx; width:50rpx;">
       </image>
       <view>更新信息</view>
     </button>

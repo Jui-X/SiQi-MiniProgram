@@ -9,40 +9,105 @@
     </view>
   </view>
 
-  <view class="swiper-con">
-      <view class='swiper-section'>
-        <view class="page-section page-section-spacing">
-          <swiper autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" style="height: 250px;" next-margin="25px;">
-            <swiper-item>
-              <view class="swiper-item">
-                <image src="../resource/images/pic_1.png" style="width:200px; height:200px; border-radius:25px 25px 0 0;" mode="scaleToFill"></image>
-                <!-- <image src="../resource/images/title.png" style="width:200px; height:75px;border-radius:25px 25px 0 0;" mode="scaleToFill"></image> -->
-              </view>
-            </swiper-item>
-            <swiper-item>
-              <view class="swiper-item">
-                
-              </view>
-            </swiper-item>
-            <swiper-item>
-              <view class="swiper-item">
-                
-              </view>
-            </swiper-item>
-          </swiper>
-        </view>
+  <view class="index-con">
+    <view class='index-section'>
+      <view class="page-section page-section-spacing">
+        <swiper autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" style="height: 250px;" next-margin="25px;">
+          <swiper-item>
+            <view class="swiper-item" bindtap="courseInfo">
+              <image src="../resource/images/pic_1.jpg" style="width:500rpx; height:400rpx; border-radius:25px 25px 0 0;" mode="scaleToFill"></image>
+              <view class="header-font">智能手机，快速入门</view>
+              <view class="title-font">手机使用小教程集合</view>
+            </view>
+          </swiper-item>
+          <swiper-item>
+            <view class="swiper-item" bindtap="tutorialInfo">  
+              <image src="../resource/images/pic_2.jpg" style="width:500rpx; height:400rpx; border-radius:25px 25px 0 0;" mode="scaleToFill"></image>
+              <view class="header-font">热门景点，旅游攻略</view>
+              <view class="title-font">让您放心出游，收获美丽旅程。</view>
+            </view>
+          </swiper-item>
+          <swiper-item>
+            <view class="swiper-item">
+              
+            </view>
+          </swiper-item>
+        </swiper>
       </view>
+    </view>
 
-      <view>
-        <view class="page-section-spacing">
-          <view class="flex-wrp" style="flex-direction:row;">
-            <view class="flex-item swipe-1"></view>
-            <view class="flex-item swipe-2"></view>
-            <view class="flex-item swipe-3"></view>
-            <view class="flex-item swipe-4"></view>
+    <view class="course-category">
+      <view class="page-section-spacing">
+        <view class="flex-wrp" style="flex-direction:row;">
+          <view class="flex-item">
+            <image src="../resource/images/icon_HOT.png" style="width:100rpx; height:100rpx; padding: 0 25rpx;" mode="scaleToFill"></image>
+            <view class="title-font">课程分类</view>
+          </view>
+          <view class="flex-item">
+            <image src="../resource/images/category1.png" style="width:150rpx; height:100rpx;" mode="scaleToFill"></image>
+            <view class="title-font">养生保健</view>
+          </view>
+          <view class="flex-item">
+            <image src="../resource/images/category2.png" style="width:150rpx; height:100rpx;" mode="scaleToFill"></image>
+            <view class="title-font">书法绘画</view>
+          </view>
+          <view class="flex-item">
+            <image src="../resource/images/category3.png" style="width:150rpx; height:100rpx;"  mode="scaleToFill"></image>
+            <view class="title-font">居家烹饪</view>
           </view>
         </view>
       </view>
     </view>
+
+    <view class="course-catagory">
+      <view class="topTabSwiper">
+        <view class='tab {{currentTab == 0 ? "tabBorder" : ""}}' data-current="0" bindtap="checkCurrentTab">人气推荐</view>
+        <view class='tab {{currentTab == 1 ? "tabBorder" : ""}}' data-current="1" bindtap="checkCurrentTab">摄影</view>
+        <view class='tab {{currentTab == 2 ? "tabBorder" : ""}}' data-current="2" bindtap="checkCurrentTab">文学</view>
+        <view class='tab {{currentTab == 3 ? "tabBorder" : ""}}' data-current="3" bindtap="checkCurrentTab">声乐</view>
+        <view class='tab {{currentTab == 4 ? "tabBorder" : ""}}' data-current="4" bindtap="checkCurrentTab">舞蹈</view>
+        <view class='tab {{currentTab == 5 ? "tabBorder" : ""}}' data-current="5" bindtap="checkCurrentTab">戏曲</view>
+        <view class='tab {{currentTab == 6 ? "tabBorder" : ""}}' data-current="6" bindtap="checkCurrentTab">按摩</view>
+      </view>
+    </view>
+
+    <swiper current="{{currentTab}}" class="swiper" style="height:1000rpx;" duration="500" bindChange="changeTab">
+      <swiper-item>
+        <view class="course-page">
+          <view class="course-section">
+            <view class="course-item" bindtap="">
+              <image src="../resource/images/community1.png" style="width:325rpx; height:300rpx;border-radius:25rpx 25rpx 0 0;" mode="scaleToFill"></image>
+              <view class="title-font">快来看我们的合唱团！</view>
+            </view>
+            <view class="course-item" bindtap="">
+              <image src="../resource/images/community2.png" style="width:325rpx; height:300rpx;border-radius:25rpx 25rpx 0 0;" mode="scaleToFill"></image>
+              <view class="title-font">写几个字请大家指教！</view>
+            </view>
+          </view>
+          <view class="course-section" bindtap="">
+            <view class="course-item" bindtap="navigateTo">
+              <image src="../resource/images/community3.png" style="width:325rpx; height:300rpx;border-radius:25rpx 25rpx 0 0;" mode="scaleToFill"></image>
+              <view class="title-font">手机上网这么简单！</view>
+            </view>
+            <view class="course-item" bindtap="">
+              <image src="../resource/images/community4.png" style="width:325rpx; height:300rpx;border-radius:25rpx 25rpx 0 0;" mode="scaleToFill"></image>
+              <view class="title-font">今天做的红烧鱼真好吃</view>
+            </view>
+          </view>
+        </view>
+      </swiper-item>
+
+      <swiper-item>
+        
+      </swiper-item>
+    </swiper>
+
+    <!-- <view class="float-btn">
+      <button class="floating-btn" bindtap="postMoment">
+        <image src="../resource/images/icon_post.png" style="height:50rpx; width:50rpx; padding-top: 10rpx;"></image>
+        <view class="btn-font">写分享</view>
+      </button>
+    </view> -->
+  </view>
 
 </view>

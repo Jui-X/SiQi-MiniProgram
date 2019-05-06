@@ -1,0 +1,45 @@
+<view class="video-course">
+  <view class="course-video">
+    <video id="" src="{{video}}" style="width: 100%;">
+
+    </video>
+  </view>
+
+  <view class="course-section">
+    <view class="topTabSwiper">
+      <view class='tab {{currentTab == 0 ? "tabBorder" : ""}}' data-current="0" bindtap="checkCurrentTab">课程介绍</view>
+      <view class='tab {{currentTab == 1 ? "tabBorder" : ""}}' data-current="1" bindtap="checkCurrentTab">课程分集</view>
+    </view>
+
+    <swiper current="{{currentTab}}" class="swiper" style="height:475rpx;" duration="500" bindChange="changeTab">
+      <swiper-item>
+        <scroll-view scroll-y="true" style="height: 100%;">
+          <view class="course-info">
+            <view class="course-title title-font">苹果手机如何删除软件</view>
+            <view class="course-content text-font">
+              方法一：首先依次点击”设置“——”通用“——”访问限制“；然后在访问限制里将关闭的的删除应用开启即可。
+            </view>
+            <view class="course-content text-font">
+              方法二：用手指长按主屏上的应用图标，此时屏幕上的应用图片全部会抖起来；然后点击左上角的叉删除即可。
+            </view>
+          </view>
+        </scroll-view>
+      </swiper-item>
+
+      <swiper-item>
+        
+      </swiper-item>
+    
+    </swiper>
+
+    <view class="course-tail">
+      <image src="../resource/images/icon_favor.png" style="height:50rpx; width:50rpx;"></image>
+      <view class="annotation-font">点赞</view>
+      <image src="../resource/images/icon_forward.png" style="height:50rpx; width:50rpx;"></image>
+      <view class="annotation-font">转发</view>
+      <image src="../resource/images/icon_comment.png" style="height:50rpx; width:50rpx;"></image>
+      <view class="annotation-font">评论</view>
+      <button class="practice-btn btn-font" size="mini">立即开始练习</button>
+    </view>
+  </view>
+</view>

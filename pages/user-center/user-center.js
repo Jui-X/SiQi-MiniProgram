@@ -3,9 +3,9 @@ const app = getApp()
 
 Page({
   data: {
-    faceUrl: app.getGlobalUserInfo().faceUrl,
+    faceUrl: "../resource/images/noneface.png",
     mode: 'scaleToFill',
-    nickname: 'Juicc',
+    nickname: '橘子',
     follow: 12,
     fans: 11,
     favor:99

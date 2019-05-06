@@ -4,37 +4,44 @@
     <view class='tab {{currentTab == 1 ? "tabBorder" : ""}}' data-current="1" bindtap="checkCurrentTab">学习成果</view>
   </view>
 
-  <swiper current="{{currentTab}}" class="swiper" style="height:700px;" duration="500" bindChange="changeTab">
+  <swiper current="{{currentTab}}" class="swiper" style="height:1000rpx;" duration="500" bindChange="changeTab">
     <swiper-item>
-      <view class="team-page">
-        <view class="team-section">
-          <view class="moment-item" bindtap="navigateTo">
+      <view class="moment-page">
+        <view class="moment-section">
+          <view class="moment-item" bindtap="">
             <image src="../resource/images/community1.png" style="width:325rpx; height:300rpx;border-radius:25rpx 25rpx 0 0;" mode="scaleToFill"></image>
             <view class="title-font">快来看我们的合唱团！</view>
             <view class="user-info">
-              
+              <image src="../resource/images/face1.png" class="head-portrait" bindtap="changeFace"></image>
+              <view class="annotation-font">花自芬芳</view>
             </view>
           </view>
-          <view class="moment-item" bindtap="navigateTo">
+          <view class="moment-item" bindtap="">
             <image src="../resource/images/community2.png" style="width:325rpx; height:300rpx;border-radius:25rpx 25rpx 0 0;" mode="scaleToFill"></image>
-            <view class="title-font">写了几个字请大家指教！</view>
+            <view class="title-font">写几个字请大家指教！</view>
+            <view class="user-info">
+              <image src="../resource/images/face2.png" class="head-portrait" bindtap="changeFace"></image>
+              <view class="annotation-font">追忆似水年华</view>
+            </view>
           </view>
         </view>
-        <view class="team-section" bindtap="teamInfo">
-          <view class="moment-item" bindtap="navigateTo">
+        <view class="moment-section">
+          <view class="moment-item" bindtap="">
             <image src="../resource/images/community3.png" style="width:325rpx; height:300rpx;border-radius:25rpx 25rpx 0 0;" mode="scaleToFill"></image>
-            <view class="title-font">原来手机上网这么简单！</view>
+            <view class="title-font">手机上网这么简单！</view>
+            <view class="user-info">
+              <image src="../resource/images/face3.png" class="head-portrait" bindtap="changeFace"></image>
+              <view class="annotation-font">指尖的岁月袅袅</view>
+            </view>
           </view>
-          <view class="moment-item" bindtap="navigateTo">
+          <view class="moment-item" bindtap="">
             <image src="../resource/images/community4.png" style="width:325rpx; height:300rpx;border-radius:25rpx 25rpx 0 0;" mode="scaleToFill"></image>
             <view class="title-font">今天做的红烧鱼真好吃</view>
+            <view class="user-info">
+              <image src="../resource/images/face4.png" class="head-portrait" bindtap="changeFace"></image>
+              <view class="annotation-font">人老心不老</view>
+            </view>
           </view>
-        </view>
-
-        <view class="comment">
-          <image src="../resource/images/icon_forward.png" style="height:50rpx; width:50rpx;"></image>
-          <image src="../resource/images/icon_comment.png" style="height:50rpx; width:50rpx;"></image>
-          <image src="../resource/images/icon_favor.png" style="height:50rpx; width:50rpx;"></image>
         </view>
       </view>
     </swiper-item>
@@ -42,5 +49,12 @@
     <swiper-item>
       
     </swiper-item>
+
+    <view class="float-btn">
+      <button class="floating-btn" bindtap="postMoment">
+        <image src="../resource/images/icon_post.png" style="height:50rpx; width:50rpx; padding-top: 10rpx;"></image>
+        <view class="btn-font">写分享</view>
+      </button>
+    </view>
   </swiper>
 </view>
