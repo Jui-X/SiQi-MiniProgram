@@ -4,37 +4,39 @@
     <view class="weui-cell">
       <view class="weui-cell__bd">
         <view class="weui-uploader">
-        <view class="weui-uploader__bd title-input">
-            <input style="border-bottom: solid #ccc 2rpx;" placeholder="这里写下您的标题" placeholder-class="annotation-font">
-            </input>
-          </view>
-          <view class="weui-uploader__bd">
-            <textarea placeholder="这里写下您想分享的内容..." placeholder-class="annotation-font" >
-            </textarea>
-          </view>
-          <view class="weui-uploader__bd">
-            <view class="weui-uploader__files">
-              <block wx:for="{{imgList}}" wx:for-item="image">
-                <view class="weui-uploader__file">
-                  <image class="weui-uploader__img" src="{{image}}" data-src="{{image}}" id="{{index}}" bindtap="previewImage"></image>
-                </view>
-              </block>
+          <form bindsubmit="post">
+            <view class="weui-uploader__bd title-input">
+              <input style="border-bottom: solid #ccc 2rpx;" placeholder="这里写下您的标题" placeholder-class="annotation-font" type='text' value="{{title}}" name="title">
+              </input>
             </view>
-            <view class="weui-uploader__input-box">
-              <view class="weui-uploader__input" bindtap="chooseImage"></view>
+            <view class="weui-uploader__bd">
+              <textarea placeholder="这里写下您想分享的内容..." placeholder-class="annotation-font" value="{{moment}}" name="moment">
+              </textarea>
             </view>
-          </view> 
-          <view class="weui-uploader__hd">
-            <view class="weui-uploader__title annotation-font">这里添加照片或视频</view>
-            <view class="weui-uploader__info">{{imgList.length}}/{{count}}</view>
-          </view>
-          <view class="weui-uploader__bd">
-            <view>
-              <button class="upload-btn" bindtap="uploadImg">
-                <view class="btn-font">确认发布分享</view>  
-              </button>
+            <view class="weui-uploader__bd">
+              <view class="weui-uploader__files">
+                <block wx:for="{{imgList}}" wx:for-item="image">
+                  <view class="weui-uploader__file">
+                    <image class="weui-uploader__img" src="{{image}}" data-src="{{image}}" id="{{index}}" bindtap="previewImage"></image>
+                  </view>
+                </block>
+              </view>
+              <view class="weui-uploader__input-box">
+                <view class="weui-uploader__input" bindtap="chooseImage"></view>
+              </view>
+            </view> 
+            <view class="weui-uploader__hd">
+              <view class="weui-uploader__title annotation-font">这里添加照片</view>
+              <view class="weui-uploader__info">{{imgList.length}}/{{count}}</view>
             </view>
-          </view>
+            <view class="weui-uploader__bd">
+              <view>
+                <button class="upload-btn" form-type='submit'>
+                  <view class="btn-font">确认发布分享</view>  
+                </button>
+              </view>
+            </view>
+          </form>
           <view class="float-btn">
             <view>
               <button class="floating-btn" bindtap="cancel">

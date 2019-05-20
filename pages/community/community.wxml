@@ -4,9 +4,31 @@
     <view class='tab {{currentTab == 1 ? "tabBorder" : ""}}' data-current="1" bindtap="checkCurrentTab">学习成果</view>
   </view>
 
-  <swiper current="{{currentTab}}" class="swiper" style="height:1000rpx;" duration="500" bindChange="changeTab">
+  <!-- <view wx:if></view> -->
+
+  <swiper current="{{currentTab}}" class="swiper" style="height: 1500rpx" duration="500" bindChange="changeTab">
     <swiper-item>
       <view class="moment-page">
+        <!-- <block wx:for="{{moment_cover}}">
+          <view class="moment-section">
+            <view class="moment-item" bindtap="">
+              <image src="../resource/images/community1.png" style="width:325rpx; height:300rpx;border-radius:25rpx 25rpx 0 0;" mode="scaleToFill"></image>
+              <view class="title-font">{{item.title}}</view>
+              <view class="user-info">
+                <image src="../resource/images/face1.png" class="head-portrait" bindtap="changeFace"></image>
+                <view class="annotation-font">{{item.username}}</view>
+              </view>
+            </view>
+            <view class="moment-item" bindtap="">
+              <image src="../resource/images/community1.png" style="width:325rpx; height:300rpx;border-radius:25rpx 25rpx 0 0;" mode="scaleToFill"></image>
+              <view class="title-font">{{item.title}}</view>
+              <view class="user-info">
+                <image src="../resource/images/face1.png" class="head-portrait" bindtap="changeFace"></image>
+                <view class="annotation-font">{{item.username}}</view>
+              </view>
+            </view>
+          </view>
+        </block> -->
         <view class="moment-section">
           <view class="moment-item" bindtap="">
             <image src="../resource/images/community1.png" style="width:325rpx; height:300rpx;border-radius:25rpx 25rpx 0 0;" mode="scaleToFill"></image>
@@ -40,6 +62,16 @@
             <view class="user-info">
               <image src="../resource/images/face4.png" class="head-portrait" bindtap="changeFace"></image>
               <view class="annotation-font">人老心不老</view>
+            </view>
+          </view>
+        </view>
+        <view class="moment-section">
+          <view class="moment-item" bindtap="">
+            <image src="../resource/images/cat.jpg" style="width:325rpx; height:300rpx;border-radius:25rpx 25rpx 0 0;" mode="scaleToFill"></image>
+            <view class="title-font">家里来了新的小伙伴！</view>
+            <view class="user-info">
+              <image src="../resource/images/noneface.png" class="head-portrait" bindtap="changeFace"></image>
+              <view class="annotation-font">荷叶别样红</view>
             </view>
           </view>
         </view>

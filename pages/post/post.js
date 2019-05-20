@@ -1,9 +1,48 @@
+//获取应用实例
+const app = getApp();
+const username = app.globalData.username;
 
 Page({
   data: {
-    count: 9,
+    count: 1,
+
+    title: "",
+    moment: "",
     imgList: [],
     result: []
+  },
+  
+  post(e) {
+    var that = this;
+    var serverUrl = app.serverUrl;
+    var title = e.detail.value.title;
+    var moment = e.detail.value.moment;
+    console.log(that.data.imgList)
+    console.log(that.data.imgList[0])
+
+    wx.showToast({
+      title: '发送成功~',
+      duration: 2000,
+    })
+
+    wx.navigateBack({
+      
+    })
+
+    // wx.uploadFile({
+    //   url: serverUrl + '/moment/post',
+    //   formData: {
+    //     username: app.getGlobalUserInfo().nickName,
+    //     faceUrl: app.getGlobalUserInfo().avatarUrl,
+    //     title: title,
+    //     content: moment,
+    //   },
+    //   filePath: that.data.imgList[0],
+    //   name: 'imgFile',
+    //   header: {
+    //     'content-type': 'application/json', // 默认值
+    //   },
+    // })
   },
 
   previewImage(e) {
@@ -19,43 +58,22 @@ Page({
   },
 
   chooseImage(e) {
-    const that = this
+    var that = this
     wx.chooseImage({
       count: 5,
       sizeType: ['original', 'compressed'],
       sourceType: ['album', 'camera'],
-      success: function(res) {
-        const tempFilePaths = res.tempFilePaths;
+      success: function (res) {
         that.setData({
           imgList: res.tempFilePaths
         })
       },
-      fail: function(res) {},
-      complete: function(res) {},
-    })
-  },
-  
-  uploadImg(e) {
-    wx.request({
-      url: 'http://127.0.0.1:8000/moment/post',
-      data: {
-        len: this.data.imgList.length,
-        imgs: this.data.imgList
-      },
-      success: res => {
-        if (res.statusCode == 200) {
-          this.setData({
-            result: res.data
-          })
-        }
-        console.log(this.data.result)
-      }
+      fail: function (res) { },
+      complete: function (res) { },
     })
   },
 
   cancel() {
-    wx.navigateBack({
-      
-    })
+    wx.navigateBack({})
   }
 })

@@ -4,7 +4,6 @@
 .community-page {
   display: flex;
   flex-direction: column;
-  height: 100%;
 }
 .tab {
   float: left;
@@ -25,9 +24,6 @@
   color: #4169E1;
   border-radius: 20rpx;
 }
-.swiper {
-  width: 100%;
-}
 .swiper-section {
   text-align: center;
   height: 100%;
@@ -35,6 +31,9 @@
   background-repeat: no-repeat;
   background-size: 100% 100%;
   -moz-background-size: 100% 100%;
+}
+.moment-page {
+  height: 100%;
 }
 .moment-section {
   display: flex;
@@ -54,7 +53,7 @@
 .user-info {
   display: flex;
   flex-direction: row;
-  padding: 0 10rpx 10rpx 10rpx;
+  padding: 0 10rpx;
 }
 .head-portrait{
   border-radius: 50rpx;
@@ -70,7 +69,7 @@
 .float-btn {
   position: absolute;
   right: 50rpx;
-  bottom: 50rpx;
+  bottom: 550rpx;
   display: flex;
   justify-content: flex-end;
 }

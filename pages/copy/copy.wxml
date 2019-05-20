@@ -1,0 +1,22 @@
+<view class="video-course">
+  <view class="course-video">
+    <image src="../resource/images/cat.jpg" style="width: 100%;"></image>
+  </view>
+
+  <view class="course-info">
+    <view class="course-title title-font">家里新来了小伙伴！</view>
+    <view class="course-content text-font">
+      小猫真可爱！
+    </view>
+  </view>
+        
+    <view class="course-tail">
+      <image src="../resource/images/icon_favor.png" style="height:50rpx; width:50rpx;"></image>
+      <view class="annotation-font">点赞</view>
+      <image src="../resource/images/icon_forward.png" style="height:50rpx; width:50rpx;"></image>
+      <view class="annotation-font">转发</view>
+      <image src="../resource/images/icon_comment.png" style="height:50rpx; width:50rpx;"></image>
+      <view class="annotation-font">评论</view>
+    </view>
+    
+</view>

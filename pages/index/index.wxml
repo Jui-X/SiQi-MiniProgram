@@ -47,7 +47,7 @@
             <image src="../resource/images/category1.png" style="width:150rpx; height:100rpx;" mode="scaleToFill"></image>
             <view class="title-font">养生保健</view>
           </view>
-          <view class="flex-item">
+          <view class="flex-item" bindtap="courseInfo">
             <image src="../resource/images/category2.png" style="width:150rpx; height:100rpx;" mode="scaleToFill"></image>
             <view class="title-font">书法绘画</view>
           </view>
@@ -71,7 +71,7 @@
       </view>
     </view>
 
-    <swiper current="{{currentTab}}" class="swiper" style="height:1000rpx;" duration="500" bindChange="changeTab">
+    <swiper current="{{currentTab}}" class="swiper" style="height:900rpx;" duration="500" bindChange="changeTab">
       <swiper-item>
         <view class="course-page">
           <view class="course-section">

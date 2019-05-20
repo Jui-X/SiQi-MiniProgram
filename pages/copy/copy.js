@@ -3,7 +3,7 @@ const app = getApp()
 
 Page({
   data: {
-    video: "C:/Users/50131/Documents/GitHub/SiQi-Backend/src/main/resources/course/calligraphy.mp4",
+    video: "",
     indicatorDots: true,
     vertical: false,
     autoplay: true,

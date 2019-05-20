@@ -15,14 +15,14 @@
       <swiper-item>
         <scroll-view scroll-y="true" style="height: 100%;">
           <view class="course-info">
-            <view class="course-title title-font">苹果手机如何删除软件</view>
+            <view class="course-title title-font">书法课课程介绍</view>
             <view class="course-content text-font">
-              方法一：首先依次点击”设置“——”通用“——”访问限制“；然后在访问限制里将关闭的的删除应用开启即可。
+              一：课程背景
             </view>
             <view class="course-content text-font">
-              方法二：用手指长按主屏上的应用图标，此时屏幕上的应用图片全部会抖起来；然后点击左上角的叉删除即可。
-            </view>
-          </view>
+              书法是中华民族千年历史积淀的传统文化独特瑰宝，蕴含无数艺术家的创造智慧，渗透着心灵的精气。随着城市老年化的加速，越来越多的老年人希望通过学习书法，掌握书法，接受中华民族传统文化的熏陶，从而达到修心养性，延年益寿，营造尊重和推广优秀传统经典的社会氛围。书法课程包括楷书，行书，草书，隶书和篆书五门书法课程。
+            </view> 
+        </view>
         </scroll-view>
       </swiper-item>
 

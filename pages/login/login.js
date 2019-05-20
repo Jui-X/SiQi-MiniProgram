@@ -40,14 +40,17 @@ Page({
   
   getUserInfo: function(e) {
     var serverUrl = app.serverUrl
-    console.log(e.detail.userInfo)
-    console.log(e.detail.rawData)
 
     wx.login({
       success: function (res) {
         console.log(res)
         // 获取登录的临时凭证
         var code = res.code;
+
+        wx.showLoading({
+          title: '正在授权，请稍等...',
+        });
+
         // 调用后端，获取微信的session_key, secret
         wx.request({
           url: serverUrl + '/wxLogin',
@@ -55,14 +58,32 @@ Page({
             code: code
           },
           method: "POST",
-          success: function(result) {
-            console.log(result);
-            // wx.redirectTo({
-            //   url: '../index/index',
-            //   success: function(res) {},
-            //   fail: function(res) {},
-            //   complete: function(res) {},
-            // })
+          success: function(res) {
+            console.log(res);
+            wx.hideLoading();
+            if (res.data.status == 200) {
+              wx.getUserInfo({
+                success(res) {
+                  const userInfo = res.userInfo
+                  
+                  // user.nickName = userInfo.nickName
+                  // user.avatarUrl = userInfo.avatarUrl
+
+                  app.setGlobalUserInfo(res.userInfo)
+                  console.log(app.getGlobalUserInfo())
+                }
+              })
+              // app.setGlobalUserInfo(res.data.data)
+
+              wx.navigateBack({ })
+            } 
+            else if (res.data.status == 500) {
+              wx.showToast({
+                title: res.data.msg,
+                icon: 'none',
+                duration: 3000
+              })
+            }
           }
         })
       }

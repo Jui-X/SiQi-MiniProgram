@@ -12,11 +12,13 @@
       <block class='info-items'>
         <image src="{{faceUrl}}" class="head-portrait" bindtap="changeFace"></image>
       </block>
-      <label class='nickname info-items'>{{username}}</label>
     </view>
   </view>
 
   <view class="user-info">
     <view class="user-item">昵称：<input type="text" value="{{nickname}}"></input></view>
+    <view class="user-item">国家：<input type="text" value="{{country}}"></input></view>
+    <view class="user-item">省份：<input type="text" value="{{province}}"></input></view>
+    <view class="user-item">城市：<input type="text" value="{{city}}"></input></view>
   </view>
 </view>
